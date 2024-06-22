@@ -25,3 +25,7 @@ mwaa-env-var-plugin==0.0.5
 2. By default, in Apache Airflow v2, plugins are configured to be "lazily" loaded using the `core.lazy_load_plugins : True` setting. 
 Make sure you add `core.lazy_load_plugins : False` as an Apache Airflow configuration option to load plugins 
 at the start of each Airflow process to override the default setting.
+
+## PyPI
+
+https://pypi.org/project/mwaa-env-var-plugin/
