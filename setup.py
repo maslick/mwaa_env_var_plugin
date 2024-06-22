@@ -1,7 +1,7 @@
 from setuptools import setup
 import pathlib
 
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -25,5 +25,6 @@ setup(name='mwaa-env-var-plugin',
       long_description=README,
       long_description_content_type='text/markdown',
       author='Pavel Maslov',
-      author_email='pavel.masloff@gmail.com'
+      author_email='pavel.masloff@gmail.com',
+      url='https://github.com/maslick/mwaa_env_var_plugin'
 )

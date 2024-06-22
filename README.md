@@ -19,7 +19,7 @@ by vanilla MWAA.
 1. Simply add `mwaa-env-var-plugin` into your MWAA requirements.txt:
 
 ```
-mwaa-env-var-plugin==0.0.5
+mwaa-env-var-plugin==0.0.6
 ```
 
 2. By default, in Apache Airflow v2, plugins are configured to be "lazily" loaded using the `core.lazy_load_plugins : True` setting. 

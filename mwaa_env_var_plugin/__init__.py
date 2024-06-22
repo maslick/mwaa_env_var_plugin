@@ -10,7 +10,7 @@ class MwaaEnvVarPlugin(AirflowPlugin):
         self.set_custom_env_vars()
 
     def on_load(self, *args, **kwargs):
-        print("Registering MwaaEnvVarPlugin...")
+        print("MwaaEnvVarPlugin loaded.")
 
     @staticmethod
     def set_custom_env_vars():
@@ -22,4 +22,4 @@ class MwaaEnvVarPlugin(AirflowPlugin):
                 new_env_var_name = env_var[len('AIRFLOW__ENV__'):]
                 # Set the new environment variable
                 os.environ[new_env_var_name] = value
-                print(f"Set environment variable: {new_env_var_name}")
+                print(f"Setting environment variable: {new_env_var_name}")
