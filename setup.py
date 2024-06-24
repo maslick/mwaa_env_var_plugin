@@ -1,7 +1,7 @@
 from setuptools import setup
 import pathlib
 
-VERSION = '0.0.6'
+VERSION = '1.0.0'
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
