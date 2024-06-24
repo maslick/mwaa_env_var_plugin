@@ -3,7 +3,7 @@
 ## Overview
 
 The `MwaaEnvVarPlugin` is a custom Apache Airflow plugin designed for Amazon Managed Workflows for Apache Airflow (MWAA). 
-This plugin automatically converts MWAA configuration options in the `env` section prefix (e.g., `env.foo_bar`) into 
+This plugin automatically converts [MWAA configuration options](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-variables.html#configuring-env-variables-customizing) in the `env` section prefix (e.g., `env.foo_bar`) into 
 user-friendly environment variables (e.g., `FOO_BAR`), as opposed to the default `AIRFLOW__ENV__FOO_BAR` provided 
 by vanilla MWAA.
 
@@ -22,7 +22,7 @@ by vanilla MWAA.
 mwaa-env-var-plugin==0.0.6
 ```
 
-2. By default, in Apache Airflow v2, plugins are configured to be "lazily" loaded using the `core.lazy_load_plugins : True` setting. 
+2. By default, in Apache Airflow v2, plugins are [configured to be "lazily" loaded](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-variables.html#configuring-2.0-airflow-override) using the `core.lazy_load_plugins : True` setting. 
 Make sure you add `core.lazy_load_plugins : False` as an Apache Airflow configuration option to load plugins 
 at the start of each Airflow process to override the default setting.
 
