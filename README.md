@@ -3,7 +3,7 @@
 ## Overview
 
 The `MwaaEnvVarPlugin` is a custom Apache Airflow plugin designed for Amazon Managed Workflows for Apache Airflow (MWAA). 
-This plugin automatically converts [MWAA configuration options](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-variables.html#configuring-env-variables-customizing) in the `env` section prefix (e.g., `env.foo_bar`) into 
+This plugin automatically converts [MWAA configuration options](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-variables.html#configuring-env-variables-customizing) in the `env` section (e.g., `env.foo_bar`) into 
 user-friendly environment variables (e.g., `FOO_BAR`), as opposed to the default `AIRFLOW__ENV__FOO_BAR` provided 
 by vanilla MWAA.
 
