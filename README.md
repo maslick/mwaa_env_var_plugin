@@ -12,7 +12,7 @@ by vanilla MWAA.
 - Automatically detects environment variables set by MWAA through configuration variables (`env` section).
 - Converts these variables to user-friendly names without the `AIRFLOW__ENV` prefix and double underscores.
 - Sets the new environment variables in the system.
-- The new variables are available in all processes (Scheduler, Worker) and override env. variables that might be set in `startup.sh` script.
+- The new variables are available in all processes (Scheduler, Worker, Webserver) and override environment variables that might have been set in `startup.sh` script.
 
 ## Installation
 
