@@ -25,6 +25,5 @@ setup(name='mwaa-env-var-plugin',
       long_description=README,
       long_description_content_type='text/markdown',
       author='Pavel Maslov',
-      author_email='pavel.masloff@gmail.com',
       url='https://github.com/maslick/mwaa_env_var_plugin'
 )
