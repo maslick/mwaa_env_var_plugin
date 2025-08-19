@@ -1,5 +1,7 @@
 # MWAA Environment Variable Plugin
 
+[![PyPI version](https://img.shields.io/pypi/v/mwaa-env-var-plugin.svg)](https://pypi.org/project/mwaa-env-var-plugin/)
+
 ## Overview
 
 The `MwaaEnvVarPlugin` is a custom Apache Airflow plugin designed for Amazon Managed Workflows for Apache Airflow (MWAA). 
@@ -25,7 +27,3 @@ mwaa-env-var-plugin==1.0.0
 2. By default, in Apache Airflow v2, plugins are [configured to be "lazily" loaded](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-variables.html#configuring-2.0-airflow-override) using the `core.lazy_load_plugins : True` setting. 
 Make sure you add `core.lazy_load_plugins : False` as an Apache Airflow configuration option to load plugins 
 at the start of each Airflow process to override the default setting.
-
-## PyPI
-
-https://pypi.org/project/mwaa-env-var-plugin/
